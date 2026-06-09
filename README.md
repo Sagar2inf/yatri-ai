@@ -1,4 +1,4 @@
-# 🧳 YatraAI — AI-Powered India Travel Planner
+#  YatraAI — AI-Powered India Travel Planner
 
 > **Yatra** (यात्रा) — *journey* in Sanskrit.  
 > Plan smart, optimized trips across India with AI itineraries backed by real data — not hallucinations.
@@ -10,7 +10,7 @@
 
 ---
 
-## ✨ What It Does
+##  What It Does
 
 Tell YatraAI something like:
 
@@ -18,19 +18,19 @@ Tell YatraAI something like:
 
 And get back a complete, day-by-day itinerary with:
 
-- 🗺️ **Route-optimized path** — TSP algorithm so you never backtrack (no Delhi→Jaipur→Ajmer→Jaipur nonsense)
-- 🏨 **Real hotels** — pulled live from OpenStreetMap
-- 🚆 **Real trains** — actual train numbers, timings, and fares for 40+ Indian city pairs
-- 🌤️ **Weather-aware scheduling** — extreme heat (42°C+) = outdoor only at 6–9am, midday rest in AC hotel
-- 💰 **Honest cost breakdown** — accommodation, food, local transport, activities per day
-- 🛺 **City-specific transport** — Delhi Metro vs Goa scooter vs Varanasi Ganga boat, with real prices
-- 🍛 **Local food recommendations** — specific dish names (Dal Baati Churma, not just "Rajasthani food")
-- 📍 **Interactive map** — day-by-day route visualized on Leaflet
-- 🔁 **Conversational modifications** — "skip Ajmer, more time in Jaipur" re-plans instantly
+-  **Route-optimized path** — TSP algorithm so you never backtrack
+-  **Real hotels** — pulled live from OpenStreetMap
+-  **Real trains** — actual train numbers, timings, and fares for 40+ Indian city pairs
+-  **Weather-aware scheduling** — extreme heat (42°C+) = outdoor only at 6–9am, midday rest in AC hotel
+-  **Honest cost breakdown** — accommodation, food, local transport, activities per day
+-  **City-specific transport** — Delhi Metro vs Goa scooter vs Varanasi Ganga boat, with real prices
+-  **Local food recommendations** — specific dish names (Dal Baati Churma, not just "Rajasthani food")
+-  **Interactive map** — day-by-day route visualized on Leaflet
+-  **Conversational modifications** — "skip Ajmer, more time in Jaipur" re-plans instantly
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 | Layer | Tech |
 |---|---|
@@ -45,7 +45,7 @@ And get back a complete, day-by-day itinerary with:
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -88,11 +88,9 @@ Open **http://localhost:5173** and start planning.
 
 ---
 
-## 🔑 Getting Free API Keys
+##  Getting Free API Keys
 
 ### Option 1 — Groq (Recommended)
-
-Fastest to set up. Free tier: 14,400 requests/day.
 
 1. Go to **https://console.groq.com**
 2. Sign up (no credit card)
@@ -109,11 +107,6 @@ Fastest to set up. Free tier: 14,400 requests/day.
 
 ### Option 2 — Google Gemini
 
-Free tier: 15 req/min, 1500 req/day.
-
-> ⚠️ **Critical:** Use **aistudio.google.com** — NOT console.cloud.google.com.
-> Keys from Cloud Console have `limit: 0` on the free tier and will not work.
-
 1. Go to **https://aistudio.google.com/app/apikey**
 2. Sign in with a **personal** Google account (not a Workspace/org account)
 3. Click **Create API Key**
@@ -128,8 +121,6 @@ Free tier: 15 req/min, 1500 req/day.
 ---
 
 ### Option 3 — Ollama (100% Local, No Key)
-
-Runs entirely on your machine. No internet required after model download.
 
 1. Download from **https://ollama.ai/download**
 2. Install, then:
@@ -158,7 +149,7 @@ For best resilience, configure both Groq and a Gemini key — they back each oth
 
 ---
 
-## 🐳 Docker (Full Stack)
+##  Docker (Full Stack)
 
 Runs everything — backend, frontend, Redis, Ollama — in one command.
 
@@ -197,7 +188,7 @@ Full annotated config: [`backend/.env.example`](backend/.env.example)
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 PRs welcome. Good first contributions:
 
@@ -214,7 +205,7 @@ cd backend && npx tsc --noEmit
 
 ---
 
-## 📄 License
+##  License
 
 MIT — use it, fork it, build on it. See [LICENSE](LICENSE) for details.
 
