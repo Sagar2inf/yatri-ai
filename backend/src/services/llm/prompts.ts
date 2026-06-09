@@ -137,7 +137,7 @@ export function buildItineraryContext(
     const daysSummary = days.slice(0, 5).map((d) => `  Day ${d.day}: ${d.location} — ${d.theme}`).join('\n');
     return `IMPORTANT: The user ALREADY HAS a complete itinerary. DO NOT generate a new itinerary.
 Existing itinerary: "${currentItinerary.title}"
-Route: ${currentItinerary.trip.from} → ${currentItinerary.trip.destinations.join(' → ')}
+Route: ${currentItinerary.trip.from} → ${(currentItinerary.trip.destinations ?? []).join(' → ')}
 Duration: ${currentItinerary.trip.durationDays} days | Budget: ₹${currentItinerary.budget.total} | Travelers: ${currentItinerary.trip.travelers}
 Days:\n${daysSummary}
 

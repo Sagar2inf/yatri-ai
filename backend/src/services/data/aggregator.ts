@@ -115,7 +115,7 @@ export async function aggregateRealData(
         totalDays ?? orderedCities.length * 2,
         prefs
       );
-      sections.push('\n' + graph.summaryLines.join('\n'));
+      sections.push('\n' + (graph.summaryLines ?? []).join('\n'));
     } catch {
       // graph analysis is advisory only — never block generation
     }

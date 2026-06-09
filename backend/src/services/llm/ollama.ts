@@ -139,7 +139,7 @@ export class GroqClient {
           messages,
           response_format: { type: 'json_object' },
           temperature: config.ollama.temperature,
-          max_tokens: 16384,
+          max_tokens: 8192,
         });
         return response.data.choices[0]?.message.content ?? '';
       } catch (err) {
@@ -176,7 +176,7 @@ export class GroqClient {
           model: config.groq.model,
           messages,
           temperature: config.ollama.temperature,
-          max_tokens: 16384,
+          max_tokens: 8192,
           stream: true,
         }, { responseType: 'stream' });
         break;
